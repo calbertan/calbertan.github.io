@@ -2,63 +2,105 @@
   margin: 0px;
   padding: 0px;
   box-sizing:border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-#particles-js
-{
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-}
-h1
-{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: 72px;
-  color:white;
-
+  font-family: 'Poppins', sans-serif;
 }
 
-h2{
-  font-size: 48px;
+body{
+  background-color: #21252B;
 }
-
 
 .content{
-  max-width: 800px;
+  max-width: 600px;
   margin: auto;
 }
 
 .about-me{
-  margin-left: 2rem;
+  width: 600px;
+  height: 400px;
+  background-color: #333842;
+  display: flex;
+  flex-direction: column;
+  margin-top:2rem;
+  border-radius: 25px;
+  background: #333842;
+  padding: 20px;
 }
 
+.about-me{
+  display: inline-flex;
+  color: white;
+  font-size: 18px;
+  display: flex;
+}
 
+.about-me > *{
+  margin-top:2rem;
+  margin-left:2rem;
+}
 
-/* DEMO-SPECIFIC STYLES */
-.typewriter h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+.introduction{
+  display:flex;
+  flex-direction: row;
+}
+
+.dynamic-txt{
+  height:18px;
+  overflow: hidden;
+}
+
+.dynamic-txt li{
+  list-style: none;
+  margin-left:5px;
+  color: #FAB867 !important;
+  top: 0;
+  animation: slide 28s steps(4) infinite;
+  position:relative;
+}
+
+@keyframes slide {
+  100%{
+    top: -84px;
+  }
+}
+.dynamic-txt li span{
+  position:relative;
+}
+
+.dynamic-txt li span::after{
+  content: "";
+  position: absolute;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background:#333842;
+  border-left: 2px solid #FAB867;
   animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    typing 7s steps(20) infinite,
+    cursor .4s step-end infinite alternate;
 }
 
-/* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  40%, 60%{
+    left: 100%;
+  }
+  100%{
+    left:0%;
+  }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+@keyframes cursor{
+  50%{ border-color: transparent}
+}
+
+.terminal{
+  background-color: #282C34;
+  font-size: 14px;
+}
+.terminal > p{
+  margin-top:.5rem;
+  margin-left:1rem;
+}
+
+.key{
+  margin-left: 1rem;
 }
