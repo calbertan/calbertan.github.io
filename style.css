@@ -36,11 +36,6 @@ section > *{
   margin:1rem;
 }
 
-.introduction{
-  display:flex;
-  flex-direction: row;
-}
-
 .dynamic-txt{
   height:21px;
   overflow: hidden;
@@ -48,7 +43,6 @@ section > *{
 
 .dynamic-txt li{
   list-style: none;
-  margin-left:5px;
   color: #FAB867 !important;
   top: 0;
   animation: slide 28s steps(4) infinite;
@@ -144,7 +138,7 @@ section > *{
 .card-image{
   position: relative;
   height: 300px;
-  width: 528px;
+  width: 510px;
 }
 .card-image .img{
   height: 100%;
@@ -152,8 +146,9 @@ section > *{
   object-fit: cover;
 }
 
-.projects{
-  width:100%;
+.projects-wrapper{
+  margin-top: 0px;
+  max-width:600px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -175,7 +170,17 @@ section > *{
 
 
 .card-wrapper{
-  margin:1rem;
+  margin-left:2rem;
+  margin-right:2rem;
 }
 
+a > img{
+  float: right;
+  max-width: 25px;
+  margin-right: .5rem;
+}
+
+p{
+  text-align: justify;
+}
 

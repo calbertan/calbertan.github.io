@@ -5,7 +5,7 @@ const preBtn = [...document.querySelectorAll('.pre-btn')];
 console.log(slideContainer)
 slideContainer.forEach((item, i) => {
   let containerDimensions = item.getBoundingClientRect();
-  let containerWidth = containerDimensions.width;
+  let containerWidth = containerDimensions.width ;
 
   nxtBtn[i].addEventListener('click', () => {
     item.scrollLeft += containerWidth

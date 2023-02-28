@@ -7,14 +7,13 @@
 <title>Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
-<script src="js/script.js"></script>
 
 </head>
 <body>
 	<div class="content">
 	<section class="about-me">
 		<div class="introduction">
-			<div class="static-txt">Hello, I'm </div>
+			<div class="static-txt">Hello, I'm</div>
 			<ul class="dynamic-txt">
 			<li><span>Christopher Albert Tan</span></li>
 			<li><span>Christopher Tan</span></li>
@@ -46,7 +45,8 @@
 		</div>
 	</section>
 	<section class="projects">
-	<!-- <h2 class="projects-heading">Projects</h2> -->
+	<h2 class="projects-heading">Projects</h2>
+	<div class="projects-wrapper">
 	<button class="pre-btn"><img src="images/next.png" alt=""></button>
 	<div class="slide-container">
 		<div class="card-wrapper">
@@ -62,18 +62,67 @@
 				users to store their favorite mangas into their reading lists!
 				It is built using react and utilizes it's local database
 				to store entries without connecting to a third-party 
-				database. This means entries are stores in the browser,
-				even when cookies/histories are cleared.
+				database. This allows entries are stores in the browser,
+				even when cookies/histories are cleared. It utilizes 
 				</p>
+			</div>
+			<div class="icons">
+				<a  href="https://github.com/calbertan/mmdb" target="_blank" ><img src="images/github.png" class="link"></a>
+				<a href="https://mmdb-nine.vercel.app/" target="_blank" ><img src="images/link.png" class="link"></a>
+			</div>
+		</div>
+		<div class="card-wrapper">
+			<div class="image-content">
+				<span class="overlay"></span>
+				<div class="card-image">
+					<img src="images/myruns.png" class="img">
+				</div>
+			</div>
+			<div class="card-content">
+				<h2 class="card-name">myRuns</h2>
+				<p class="card-text">myRuns is an android application
+				tracks your exercise and stores them in its history.
+				It is built using a MVVM model to seperate the database
+				from the viewmodel to increase modularity. It tracks
+				your location by using the GoogleMapsAPI and a tracking
+				service. It also features an activity recognition feature
+				that detects whether you are running, sitting or walking.
+				</p>
+			</div>
+			<div class="icons">
+				<a  href="https://github.com/calbertan/myruns" target="_blank" ><img src="images/github.png" class="link"></a>
+			</div>
+		</div>
+		<div class="card-wrapper">
+			<div class="image-content">
+				<span class="overlay"></span>
+				<div class="card-image">
+					<img src="images/cshell.png" class="img">
+				</div>
+			</div>
+			<div class="card-content">
+				<h2 class="card-name">C-Shell</h2>
+				<p class="card-text">C-Shell is a command-line interprer 
+				that mimics a Linux/Unix command line made using C. 
+				This shell supports listing files and directories in 
+				the file system, history of executed commands, and 
+				environment variables. Upon calling an unsupported 
+				function, CShell will create a fork to a child process, 
+				where the command will be passed and executed by the 
+				normal Linux/Unix terminal. 
+				</p>
+			</div>
+			<div class="icons">
+				<a  href="https://github.com/calbertan/cshell" target="_blank" ><img src="images/github.png" class="link"></a>
 			</div>
 		</div>
 	</div>
 	<button class="nxt-btn"><img src="images/next.png" alt=""></button>
-
+	</div>
 	</section>
 </div>
 
-
+<script src="js/script.js"></script>
 
 </body>
 </html>
