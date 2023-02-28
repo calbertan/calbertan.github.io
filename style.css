@@ -16,6 +16,7 @@ body{
 
 section{
   width: 700px;
+  height: inherit;
   background-color: #333842;
   display: flex;
   flex-direction: column;
@@ -80,6 +81,21 @@ section > *{
   }
 }
 
+h2{
+  color:#FAB867;
+  max-width: fit-content;
+  border-right: 2px solid #FAB867;
+  animation: cursor .4s step-end infinite alternate;
+}
+
+a{
+  color:inherit;
+  text-decoration: inherit;
+}
+a:hover{
+  color:#FAB867;
+}
+
 @keyframes cursor{
   50%{ border-color: transparent}
 }
@@ -112,27 +128,98 @@ section > *{
   color: rgb(162, 211, 243)
 }
 
+.collapse{
+  overflow: hidden;
+}
+
+.collapse input{
+  display: none;
+}
+
+.collapse label{
+  position:relative;
+  display: block;
+  background: #282C34;
+
+  cursor: pointer;
+  padding: 1rem .5rem;
+  border-radius: 4px ;
+}
+
+.collapse label:after{
+  content:"";
+  position: absolute;
+  right:1.5rem;
+  top:1.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url("images/next.png") 0 0 no-repeat;
+  background-size: .6rem;
+  transition: all .5s ease;
+}
+
+.collapse input:checked + label:after{
+  transform: rotate(90deg);
+}
+
+.collapse-text{
+  max-height: 1px;
+  overflow: hidden;
+  position: relative;
+  top: -100%;
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.collapse input:checked ~ .collapse-text{
+  max-height: 500px;
+  overflow: hidden;
+  opacity: 1;
+  top: 0;
+  background: #282C34;
+}
+
+.collapse-text > *{
+  margin-left: .5rem;
+}
+
+.collapse-text ul li{
+  margin: .5rem 1rem .5rem 2rem;
+}
+
+
 .pre-btn{
   left: 0;
   transform: rotate(180deg);
   width:1rem;
   background-color:#333842;
   border: 0cm;
+  height: 500px;
+  width: 500px;
 }
 
-.pre-btn img{
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+.pre-btn img, .nxt-btn img{
+  transition: all .2s ease-in-out;
   height:1rem;
 }
 
 .nxt-btn{
   right: 0;
-  width:1rem;
   background-color:#333842;
   border: 0cm;
-}
-
-.nxt-btn img{
-  height:1rem;
+  height: 500px;
+  width: 500px;
 }
 
 .card-image{
@@ -170,8 +257,8 @@ section > *{
 
 
 .card-wrapper{
-  margin-left:2rem;
-  margin-right:2rem;
+  margin-left:1rem;
+  margin-right:1rem;
 }
 
 a > img{
@@ -182,5 +269,9 @@ a > img{
 
 p{
   text-align: justify;
+}
+
+.projects{
+  margin-bottom: 2rem;
 }
 

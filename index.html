@@ -28,9 +28,9 @@
 			<span class="key">location</span> : Burnaby, BC, Canada <br>
 			<span class="key">contact</span> : <br>
 			<span class="curly">{</span><br>
-			<span class="subkey">email</span> : "cat8@sfu.ca"<br>
-			<span class="subkey">github</span> : "https://github.com/calbertan"<br>
-			<span class="subkey">linkedin</span> : "https://www.linkedin.com/in/calbertan/"<br>
+			<span class="subkey">email</span> : <a href="mailto:cat8@sfu.ca" target="_blank">"cat8@sfu.ca"<br>
+			<span class="subkey">github</span> : <a href="https://github.com/calbertan" target="_blank">"https://github.com/calbertan"</a><br>
+			<span class="subkey">linkedin</span> : <a href="https://www.linkedin.com/in/calbertan" target="_blank">"https://www.linkedin.com/in/calbertan/"</a><br>
 			<span class="curly">}</span><br>
 			<span class="key">hobbies: </span><br>
 			<span class="curly">{</span><br>
@@ -44,81 +44,126 @@
 			</p>
 		</div>
 	</section>
+	<section class="experience">
+		<h2 class="experience-heading">experience</h2>
+		<div class="collapse-wrapper">
+			<div class="collapse">
+				<input type="checkbox" id="collapse-head">
+				<label for="collapse-head">Langara College</label>
+				<div class="collapse-text">
+					<h4>Teaching Assistant</h4>
+					<ul>
+						<li>Responsible for marking assignments of students 
+							taking the Algorithms and Data Structures course in Langara,
+							demonstrating a strong understanding of course content
+						</li>
+						<li>Created a rename-and-unzipper script using 
+							Python, streamlining the process of organizing 
+							file submissions
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section class="projects">
-	<h2 class="projects-heading">Projects</h2>
-	<div class="projects-wrapper">
-	<button class="pre-btn"><img src="images/next.png" alt=""></button>
-	<div class="slide-container">
-		<div class="card-wrapper">
-			<div class="image-content">
-				<span class="overlay"></span>
-				<div class="card-image">
-					<img src="images/mmdb.png" class="img">
+		<h2 class="projects-heading">projects</h2>
+		<div class="projects-wrapper">
+		<button class="pre-btn"><img src="images/next.png" alt=""></button>
+		<div class="slide-container">
+			<div class="card-wrapper">
+				<div class="image-content">
+					<span class="overlay"></span>
+					<div class="card-image">
+						<img src="images/mmdb.png" class="img">
+					</div>
+				</div>
+				<div class="card-content">
+					<h3 class="card-name">mmdb</h2>
+					<p class="card-text">mmdb is a website that allows
+					users to store their favorite mangas into their reading lists!
+					It is built using react and utilizes it's local database
+					to store entries without connecting to a third-party 
+					database. This allows entries are stores in the browser,
+					even when cookies/histories are cleared. It utilizes 
+					</p>
+				</div>
+				<div class="icons">
+					<a href="https://github.com/calbertan/mmdb" target="_blank" ><img src="images/github.png" class="link"></a>
+					<a href="https://mmdb-nine.vercel.app/" target="_blank" ><img src="images/link.png" class="link"></a>
 				</div>
 			</div>
-			<div class="card-content">
-				<h2 class="card-name">mmdb</h2>
-				<p class="card-text">mmdb is a website that allows
-				users to store their favorite mangas into their reading lists!
-				It is built using react and utilizes it's local database
-				to store entries without connecting to a third-party 
-				database. This allows entries are stores in the browser,
-				even when cookies/histories are cleared. It utilizes 
-				</p>
-			</div>
-			<div class="icons">
-				<a  href="https://github.com/calbertan/mmdb" target="_blank" ><img src="images/github.png" class="link"></a>
-				<a href="https://mmdb-nine.vercel.app/" target="_blank" ><img src="images/link.png" class="link"></a>
-			</div>
-		</div>
-		<div class="card-wrapper">
-			<div class="image-content">
-				<span class="overlay"></span>
-				<div class="card-image">
-					<img src="images/myruns.png" class="img">
+			<div class="card-wrapper">
+				<div class="image-content">
+					<span class="overlay"></span>
+					<div class="card-image">
+						<img src="images/myruns.png" class="img">
+					</div>
+				</div>
+				<div class="card-content">
+					<h3 class="card-name">myRuns</h2>
+					<p class="card-text">myRuns is an android application
+					tracks your exercise and stores them in its history.
+					It is built using a MVVM model to seperate the database
+					from the viewmodel to increase modularity. It tracks
+					your location by using the GoogleMapsAPI and a tracking
+					service. It also features an activity recognition feature
+					that detects whether you are running, sitting or walking.
+					</p>
+				</div>
+				<div class="icons">
+					<a  href="https://github.com/calbertan/myruns" target="_blank" ><img src="images/github.png" class="link"></a>
 				</div>
 			</div>
-			<div class="card-content">
-				<h2 class="card-name">myRuns</h2>
-				<p class="card-text">myRuns is an android application
-				tracks your exercise and stores them in its history.
-				It is built using a MVVM model to seperate the database
-				from the viewmodel to increase modularity. It tracks
-				your location by using the GoogleMapsAPI and a tracking
-				service. It also features an activity recognition feature
-				that detects whether you are running, sitting or walking.
-				</p>
-			</div>
-			<div class="icons">
-				<a  href="https://github.com/calbertan/myruns" target="_blank" ><img src="images/github.png" class="link"></a>
-			</div>
-		</div>
-		<div class="card-wrapper">
-			<div class="image-content">
-				<span class="overlay"></span>
-				<div class="card-image">
-					<img src="images/cshell.png" class="img">
+			<div class="card-wrapper">
+				<div class="image-content">
+					<span class="overlay"></span>
+					<div class="card-image">
+						<img src="images/cshell.png" class="img">
+					</div>
+				</div>
+				<div class="card-content">
+					<h3 class="card-name">C-Shell</h2>
+					<p class="card-text">C-Shell is a command-line interprer 
+					that mimics a Linux/Unix command line made using C. 
+					This shell supports listing files and directories in 
+					the file system, history of executed commands, and 
+					environment variables. Upon calling an unsupported 
+					function, CShell will create a fork to a child process, 
+					where the command will be passed and executed by the 
+					normal Linux/Unix terminal. 
+					</p>
+				</div>
+				<div class="icons">
+					<a  href="https://github.com/calbertan/cshell" target="_blank" ><img src="images/github.png" class="link"></a>
 				</div>
 			</div>
-			<div class="card-content">
-				<h2 class="card-name">C-Shell</h2>
-				<p class="card-text">C-Shell is a command-line interprer 
-				that mimics a Linux/Unix command line made using C. 
-				This shell supports listing files and directories in 
-				the file system, history of executed commands, and 
-				environment variables. Upon calling an unsupported 
-				function, CShell will create a fork to a child process, 
-				where the command will be passed and executed by the 
-				normal Linux/Unix terminal. 
-				</p>
-			</div>
-			<div class="icons">
-				<a  href="https://github.com/calbertan/cshell" target="_blank" ><img src="images/github.png" class="link"></a>
+			<div class="card-wrapper">
+				<div class="image-content">
+					<span class="overlay"></span>
+					<div class="card-image">
+					</div>
+				</div>
+				<div class="card-content">
+					<h3 class="card-name">Portfolio</h2>
+					<p class="card-text">This website! It was made by only
+					using html, css and javascript. Despite having 
+					experience with frameworks like react and typescript,
+					I wanted to challenge myself to create a website 
+					by using basic html/css knowledge. This exercise
+					made me all the more aware of the cool tricks
+					you can accomplish with the basic tools. 
+					</p>
+				</div>
+				<div class="icons">
+					<a  href="https://github.com/calbertan/cshell" target="_blank" ><img src="images/github.png" class="link"></a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<button class="nxt-btn"><img src="images/next.png" alt=""></button>
-	</div>
+		<button class="nxt-btn"><img src="images/next.png" alt=""></button>
+		</div>
 	</section>
 </div>
 
