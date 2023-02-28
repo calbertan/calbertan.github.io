@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<script src="js/script.js"></script>
+
 </head>
 <body>
-  <div class="content">
-    <section class="about-me">
-      <div class="introduction">
-        <div class="static-txt">Hello, I'm </div>
-        <ul class="dynamic-txt">
-          <li><span>Christopher Albert Tan</span></li>
-          <li><span>Christopher Tan</span></li>
-          <li><span>a Software Developer</span></li>
-          <li><span>a 3rd year Software Systems student @ SFU</span></li>
-        </ul>
-      </div>
-      <div class="terminal">
-        <p>
-          <span class="const">const</span> chris = { <br>
-          <span class="key">location: </span>Burnaby, BC, Canada <br>
-          <span class="key">tools: </span>['React', 'Node.js', 'NEXT', 'BootStrap'] <br>
-          <span class="key">contact: </span><br>
-          <br>
-          email: "cat8@sfu.ca"<br>
-          github: "https://github.com/calbertan"<br>
-          linkedin: "https://www.linkedin.com/in/calbertan/"<br>
-          }<br>
-        
-        </p>
-      </div>
-  </div>
-    </section>
-  </div>
+	<div class="content">
+	<section class="about-me">
+		<div class="introduction">
+			<div class="static-txt">Hello, I'm </div>
+			<ul class="dynamic-txt">
+			<li><span>Christopher Albert Tan</span></li>
+			<li><span>Christopher Tan</span></li>
+			<li><span>a Software Developer</span></li>
+			<li><span>studying Software Systems @ SFU</span></li>
+			</ul>
+		</div>
+		<div class="terminal">
+			<p>
+			<span class="const">const</span><span class="name"> chris</span> = { <br>
+			<span class="key">bio</span> : Christopher Tan | 3rd year Software Systems @ SFU <br>
+			<span class="key">location</span> : Burnaby, BC, Canada <br>
+			<span class="key">contact</span> : <br>
+			<span class="curly">{</span><br>
+			<span class="subkey">email</span> : "cat8@sfu.ca"<br>
+			<span class="subkey">github</span> : "https://github.com/calbertan"<br>
+			<span class="subkey">linkedin</span> : "https://www.linkedin.com/in/calbertan/"<br>
+			<span class="curly">}</span><br>
+			<span class="key">hobbies: </span><br>
+			<span class="curly">{</span><br>
+			<span class="subkey">0</span> : "piano"<br>
+			<span class="subkey">1</span> : "badminton"<br>
+			<span class="subkey">2</span> : "table-tennis"<br>
+			<span class="subkey">3</span> : "card games"<br>
+			<span class="subkey">4</span> : "manga"<br>
+			<span class="subkey">5</span> : "anime"<br>
+			<span class="curly">}</span><br>
+			</p>
+		</div>
+	</section>
+	<section class="projects">
+	<!-- <h2 class="projects-heading">Projects</h2> -->
+	<button class="pre-btn"><img src="images/next.png" alt=""></button>
+	<div class="slide-container">
+		<div class="card-wrapper">
+			<div class="image-content">
+				<span class="overlay"></span>
+				<div class="card-image">
+					<img src="images/mmdb.png" class="img">
+				</div>
+			</div>
+			<div class="card-content">
+				<h2 class="card-name">mmdb</h2>
+				<p class="card-text">mmdb is a website that allows
+				users to store their favorite mangas into their reading lists!
+				It is built using react and utilizes it's local database
+				to store entries without connecting to a third-party 
+				database. This means entries are stores in the browser,
+				even when cookies/histories are cleared.
+				</p>
+			</div>
+		</div>
+	</div>
+	<button class="nxt-btn"><img src="images/next.png" alt=""></button>
 
-  
+	</section>
+</div>
+
+
 
 </body>
 </html>
