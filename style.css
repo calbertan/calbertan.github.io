@@ -52,11 +52,12 @@ section > *{
 
 @keyframes slide {
   100%{
-    top: -88px;
+    top: -96px;
   }
 }
 .dynamic-txt li span{
   position:relative;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .dynamic-txt li span::after{
@@ -86,6 +87,7 @@ h2{
   max-width: fit-content;
   border-right: 2px solid #FAB867;
   animation: cursor .4s step-end infinite alternate;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 a{
@@ -248,17 +250,21 @@ a:hover{
   justify-content: left;
   align-items: center;
   overflow-x: auto;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 .slide-container::-webkit-scrollbar {
   display: none;
 }
 
-
 .card-wrapper{
-  margin-left:1rem;
-  margin-right:1rem;
+  margin-left:1.5rem;
+  margin-right:1.5rem;
+}
+
+h3{
+  margin-top: 1rem;
+  margin-bottom: .5rem;
 }
 
 a > img{
