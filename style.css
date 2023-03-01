@@ -34,10 +34,35 @@ section{
 }
 
 section > *{
-  margin:1rem;
+  margin:.5rem;
+}
+
+.about-me-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5rem 1rem;
+}
+
+.resume-btn{
+  background-color: #1dd460;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: .5rem .75rem;
+  border-radius: 5px;
+  border: 0px;
+  text-align: center;
+  font-size: 14px;
+  max-height:2rem;
+}
+
+.resume-btn:hover{
+  background-color: #18b150;
+  color: white;
 }
 
 .dynamic-txt{
+  font-weight: 600;
   height:21px;
   overflow: hidden;
 }
@@ -64,7 +89,7 @@ section > *{
   content: "";
   position: absolute;
   left:0;
-  height: 100%;
+  height: 22px;
   width: 100%;
   background:#333842;
   border-left: 2px solid #FAB867;
@@ -95,7 +120,7 @@ a{
   text-decoration: inherit;
 }
 a:hover{
-  color:#FAB867;
+  color:rgb(32, 255, 144)
 }
 
 @keyframes cursor{
@@ -130,6 +155,30 @@ a:hover{
   color: rgb(162, 211, 243)
 }
 
+.job-logo{
+  width:4rem;
+  height:4rem;
+}
+
+.job-container{
+  display: flex;
+  flex-direction: row;
+  border-top:2px solid white;
+  margin-right:.5rem;
+  padding-top: .5rem;
+}
+
+.job-title{
+  align-self: center;
+  margin-left:.5rem;
+  flex-grow: 2;
+}
+
+.date{
+  align-self: center;
+  margin-right: .5rem;
+}
+
 .collapse{
   overflow: hidden;
 }
@@ -142,11 +191,15 @@ a:hover{
   position:relative;
   display: block;
   background: #282C34;
-
   cursor: pointer;
   padding: 1rem .5rem;
   border-radius: 4px ;
 }
+
+.collapse label:hover{
+  color:rgb(32, 255, 144);
+}
+
 
 .collapse label:after{
   content:"";
@@ -187,6 +240,7 @@ a:hover{
 
 .collapse-text ul li{
   margin: .5rem 1rem .5rem 2rem;
+  font-size: 14px;
 }
 
 
@@ -281,3 +335,21 @@ p{
   margin-bottom: 2rem;
 }
 
+.tools{
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tools > span{
+  font-size: 15px;
+  background-color: #282C34;
+  color:#FAB867;
+  padding:.5rem;
+  margin-right:.5rem;
+  border-radius: 15px;
+}
+
+h3:hover{
+  color:rgb(32, 255, 144)
+}
