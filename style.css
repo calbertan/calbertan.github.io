@@ -335,6 +335,19 @@ p{
   margin-bottom: 2rem;
 }
 
+.empty-bar{
+  margin: 1rem;
+  max-width: inherit;
+  height: 1.5rem;
+  background-color: #30333a;
+}
+
+.progress-bar{
+  width: 0;
+  height: 1.5rem;
+  background-color: #18b150;
+}
+
 .tools{
   margin-top: 1rem;
   display: flex;
