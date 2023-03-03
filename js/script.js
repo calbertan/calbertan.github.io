@@ -2,7 +2,7 @@ const slideContainer = [...document.querySelectorAll('.slide-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
 const preBtn = [...document.querySelectorAll('.pre-btn')];
 const slider = document.getElementById("myBar");
-var interval = 100 / 5;
+var interval = 100 / 6;
 var current_width = 0;
 
 slideContainer.forEach((item, i) => {

@@ -257,7 +257,10 @@ a:hover{
 .pre-btn img,
 .nxt-btn img {
   opacity: 0.2;
+  margin-left: 2rem;
 }
+
+
 
 .pre-btn:hover img,
 .nxt-btn:hover img {
@@ -291,7 +294,7 @@ a:hover{
 
 .projects-wrapper{
   margin-top: 0px;
-  max-width:600px;
+  max-width:650px;
   height: 100%;
   display: flex;
   align-items: center;
