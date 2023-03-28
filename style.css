@@ -110,9 +110,7 @@ section > *{
 h2{
   color:#FAB867;
   max-width: fit-content;
-  border-right: 2px solid #FAB867;
-  animation: cursor .4s step-end infinite alternate;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 a{
