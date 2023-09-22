@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color: #21252B;
+  background-color: rgb(30, 30, 30);
 }
 
 .content{
@@ -17,12 +17,12 @@ body{
 section{
   width: 700px;
   height: inherit;
-  background-color: #333842;
+  background-color: rgb(45, 45, 45);
   display: flex;
   flex-direction: column;
   margin-top:2rem;
-  border-radius: 25px;
-  background: #333842;
+  border-radius: .5rem;
+  background: rgb(45, 45, 45);
   padding: 20px;
 }
 
@@ -45,7 +45,7 @@ section > *{
 }
 
 .resume-btn{
-  background-color: #1dd460;
+  background-color: rgb(14,170,109);
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   padding: .5rem .75rem;
@@ -57,7 +57,7 @@ section > *{
 }
 
 .resume-btn:hover{
-  background-color: #18b150;
+  background-color:rgb(11, 129, 84);
   color: white;
 }
 
@@ -88,10 +88,10 @@ section > *{
 .dynamic-txt li span::after{
   content: "";
   position: absolute;
-  left:0;
+  left:0; 
   height: 22px;
   width: 100%;
-  background:#333842;
+  background: rgb(45, 45, 45);
   border-left: 2px solid #FAB867;
   animation: 
     typing 7s steps(20) infinite,
@@ -110,7 +110,8 @@ section > *{
 h2{
   color:#FAB867;
   max-width: fit-content;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Helvetica Neue';
+  letter-spacing: .1rem;
 }
 
 a{
@@ -126,10 +127,12 @@ a:hover{
 }
 
 .terminal{
-  background-color: #282C34;
+  background-color: rgb(37, 37, 38);
   font-size: 14px;
   font-family: 'Courier New', Courier, monospace;
   margin:1rem;
+  border-radius: .25rem;
+  letter-spacing: .05rem;
 }
 .terminal > p{
   margin: .5rem 1rem;
@@ -153,12 +156,69 @@ a:hover{
   color: rgb(162, 211, 243)
 }
 
-.job-logo{
-  width:4rem;
-  height:4rem;
+.accordion{
+  background-color: rgb(37,37,38);
+}
+
+.accordion > li{
+  list-style: none;
+}
+
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer
+}
+
+label::before{
+  content: '+';
+  margin-right: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .job-container{
+  margin-top: 0rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.accordion input[type='radio']:checked + label + .job-container{
+  max-height: 400px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.accordion input[type='radio']:checked + label::before {
+  content: '-'
+}
+
+.accordion span{
+  background-color: white;
+  color:rgb(45,45,45);
+  margin: 5rem;
+}
+
+.job-entry{
+  border-bottom: 1rem solid rgb(45,45,45);
+}
+
+.job-logo{
+  width:3.5rem;
+  height:3.5rem;
+  border-radius: .2rem;
+}
+
+.job-header{
   display: flex;
   flex-direction: row;
   border-top:2px solid white;
@@ -177,76 +237,17 @@ a:hover{
   margin-right: .5rem;
 }
 
-.collapse{
-  overflow: hidden;
+.job-desc{
+  margin-top: .5rem;
+  margin-left: 2rem;
+  font-size:medium;
 }
-
-.collapse input{
-  display: none;
-}
-
-.collapse label{
-  position:relative;
-  display: block;
-  background: #282C34;
-  cursor: pointer;
-  padding: 1rem .5rem;
-  border-radius: 4px ;
-}
-
-.collapse label:hover{
-  color:rgb(32, 255, 144);
-}
-
-
-.collapse label:after{
-  content:"";
-  position: absolute;
-  right:1.5rem;
-  top:1.3rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: url("images/next.png") 0 0 no-repeat;
-  background-size: .6rem;
-  transition: all .5s ease;
-}
-
-.collapse input:checked + label:after{
-  transform: rotate(90deg);
-}
-
-.collapse-text{
-  max-height: 1px;
-  overflow: hidden;
-  position: relative;
-  top: -100%;
-  opacity: 0;
-  transition: all .5s ease;
-}
-
-.collapse input:checked ~ .collapse-text{
-  max-height: 500px;
-  overflow: hidden;
-  opacity: 1;
-  top: 0;
-  background: #282C34;
-}
-
-.collapse-text > *{
-  margin-left: .5rem;
-}
-
-.collapse-text ul li{
-  margin: .5rem 1rem .5rem 2rem;
-  font-size: 14px;
-}
-
 
 .pre-btn{
   left: 0;
   transform: rotate(180deg);
   width:1rem;
-  background-color:#333842;
+  background-color: rgb(45,45,45);
   border: 0cm;
   height: 500px;
   width: 500px;
@@ -258,12 +259,11 @@ a:hover{
   margin-left: 2rem;
 }
 
-
-
 .pre-btn:hover img,
 .nxt-btn:hover img {
   transform: scale(1.3);
   opacity: 1;
+  cursor: pointer
 }
 
 .pre-btn img, .nxt-btn img{
@@ -273,7 +273,7 @@ a:hover{
 
 .nxt-btn{
   right: 0;
-  background-color:#333842;
+  background-color:rgb(45,45,45);
   border: 0cm;
   height: 500px;
   width: 500px;
@@ -339,14 +339,17 @@ p{
 .empty-bar{
   margin: 1rem;
   max-width: inherit;
-  height: 1.5rem;
-  background-color: #30333a;
+  height: 1rem;
+  background-color: rgb(37,37,38);
+  border-radius: 1rem;
+  
 }
 
 .progress-bar{
   width: 0;
-  height: 1.5rem;
-  background-color: #18b150;
+  height: 1rem;
+  background-color: rgb(14,170,109);
+  border-radius: 1rem;
 }
 
 .tools{

@@ -29,7 +29,6 @@
 			<span class="const">const</span><span class="name"> chris</span> = { <br>
 			<span class="key">bio</span> : Christopher Tan | 3rd year Software Systems @ SFU <br>
 			<span class="key">location</span> : Burnaby, BC, Canada <br>
-			<span class="key">Resume</span> : Resume.pdf <br>
 			<span class="key">contact</span> : <br>
 			<span class="curly">{</span><br>
 			<span class="subkey">email</span> : <a href="mailto:cat8@sfu.ca" target="_blank">"cat8@sfu.ca"</a><br>
@@ -41,38 +40,68 @@
 			<span class="subkey">0</span> : "piano"<br>
 			<span class="subkey">1</span> : "badminton"<br>
 			<span class="subkey">2</span> : "table-tennis"<br>
-			<span class="subkey">3</span> : "card games"<br>
+			<span class="subkey">3</span> : "tcg"<br>
 			<span class="subkey">4</span> : "manga"<br>
-			<span class="subkey">5</span> : "anime"<br>
 			<span class="curly">}</span><br>
 			</p>
 		</div>
 	</section>
 	<section class="experience">
 		<h2 class="experience-heading">experience</h2>
-		<div class="collapse-wrapper">
-			<div class="collapse">
-				<input type="checkbox" id="collapse-head">
-				<label for="collapse-head">Langara College</label>
-				<div class="collapse-text">
-					<div class="job-container">
-						<img src="/images/langara.png" class="job-logo">
-						<h4 class="job-title">Teaching Assistant</h4>
-						<p class="date">Sep 2022 - current</p>
+		<ul class="accordion">
+			<li class="job-entry">
+				<input type="radio" name="accordion" id="job-1" checked>
+				<label for="job-1">BCGov</label>
+				<div class="job-container">
+					<div class="job-header">
+						<img src="images/bcgov.png" class="job-logo">
+						<h4 class="job-title">Junior DevOps Specialist</h4>
+						<p class="date">May 2023 - Dec 2023</p>
 					</div>
-					<ul>
+					<ul class="job-desc">
+						<li>Dockerized and templatized a MERN app on the Kubernetes-
+							based platform, Openshift
+						</li>
+						<br>
+						<li>Created a CI/CD pipeline using Tekton to enhance the
+							 onboarding process of developers learning Openshift
+						</li>
+						<br>
+						<li>
+							Simplified CRUD functionality for Red Hat's ACS through
+							 Ansible Playbook scripts
+						</li>
+						<br>
+						<li>
+							Contributed to the development of a Next.js 13-based 
+							application serving as a government application registry
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="job-entry">
+				<input type="radio" name="accordion" id="job-2">
+				<label for="job-2">Langara College</label>
+				<div class="job-container">
+					<div class="job-header">
+						<img src="images/langara.png" class="job-logo">
+						<h4 class="job-title">Teaching Assistant</h4>
+						<p class="date">Aug 2022 - Apr 2023</p>
+					</div>
+					<ul class="job-desc">
 						<li>Responsible for marking assignments of students 
 							taking the Algorithms and Data Structures course in Langara,
 							demonstrating a strong understanding of course content
 						</li>
+						<br>
 						<li>Created a rename-and-unzipper script using 
 							Python, streamlining the process of organizing 
 							file submissions
 						</li>
 					</ul>
 				</div>
-			</div>
-		</div>
+			</li>
+		</ul>
 	</section>
 
 	<section class="projects">
@@ -81,202 +110,210 @@
 			<div id="myBar" class="progress-bar"></div>
 		</div>
 		<div class="projects-wrapper">
-		<button class="pre-btn"><img src="images/next.png" alt=""></button>
-		<div class="slide-container">
-			<div class="card-wrapper">
-				<div class="image-content">
-					<span class="overlay"></span>
-					<div class="card-image">
-						<img src="images/mmdb.png" class="img">
+			<button class="pre-btn"><img src="images/next.png" alt=""></button>
+			<div class="slide-container">
+				
+				<div class="card-wrapper">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="card-image">
+							<img src="images/mmdb.png" class="img">
+						</div>
+					</div>
+					<div class="card-content">
+						<a  href="https://github.com/calbertan/mmdb" target="_blank" >
+							<h3 class="card-name">mmdb</h3>
+						</a>
+						<p class="card-text">mmdb is a website that allows
+						users to store their favorite mangas into their reading lists!
+						It is built using react and utilizes it's local database
+						to store entries without connecting to a third-party 
+						database. This allows entries are stores in the browser,
+						even when cookies/histories are cleared. 
+						</p>
+					</div>
+					<div class="icons">
+						<a href="https://github.com/calbertan/mmdb" target="_blank" ><img src="images/github.png" class="link"></a>
+						<a href="https://mmdb-nine.vercel.app/" target="_blank" ><img src="images/link.png" class="link"></a>
+					</div>
+					<div class="tools">
+						<span>React</span>
+						<span>Bootstrap</span>
+						<span>Javascript</span>
+						<span>Vercel</span>
 					</div>
 				</div>
-				<div class="card-content">
-					<a  href="https://github.com/calbertan/mmdb" target="_blank" >
-						<h3 class="card-name">mmdb</h3>
-					</a>
-					<p class="card-text">mmdb is a website that allows
-					users to store their favorite mangas into their reading lists!
-					It is built using react and utilizes it's local database
-					to store entries without connecting to a third-party 
-					database. This allows entries are stores in the browser,
-					even when cookies/histories are cleared. 
-					</p>
-				</div>
-				<div class="icons">
-					<a href="https://github.com/calbertan/mmdb" target="_blank" ><img src="images/github.png" class="link"></a>
-					<a href="https://mmdb-nine.vercel.app/" target="_blank" ><img src="images/link.png" class="link"></a>
-				</div>
-				<div class="tools">
-					<span>React</span>
-					<span>Bootstrap</span>
-					<span>Javascript</span>
-					<span>Vercel</span>
-				</div>
-			</div>
-			<div class="card-wrapper">
-				<div class="image-content">
-					<span class="overlay"></span>
-					<div class="card-image">
-						<img src="images/sfuia.png" class="img">
+
+				<div class="card-wrapper">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="card-image">
+							<img src="images/sfuia.png" class="img">
+						</div>
+					</div>
+					<div class="card-content">
+						<a  href="https://github.com/sfuia/sfuia-website" target="_blank" >
+							<h3 class="card-name">SFUIA Organizational Website</h3>
+						</a>
+						<p class="card-text">SFUIA is a fulls stack website for the
+						Simon Fraser University Indonesian Association. Me, along with
+						2 other members, pioneered the website in order to facilitate
+						other Indonesians with an information hub that is easily
+						accessible.
+						</p>
+					</div>
+					<div class="icons">
+						<a  href="https://github.com/sfuia/sfuia-website" target="_blank" ><img src="images/github.png" class="link"></a>
+						<a href="https://sfuia.com" target="_blank" ><img src="images/link.png" class="link"></a>
+					</div>
+					<div class="tools">
+						<span>Next.js</span>
+						<span>Bootstrap</span>
+						<span>SASS</span>
+						<span>Vercel</span>
 					</div>
 				</div>
-				<div class="card-content">
-					<a  href="https://github.com/sfuia/sfuia-website" target="_blank" >
-						<h3 class="card-name">SFUIA Organizational Website</h3>
-					</a>
-					<p class="card-text">SFUIA is a fulls stack website for the
-					Simon Fraser University Indonesian Association. Me, along with
-					2 other members, pioneered the website in order to facilitate
-					other Indonesians with an information hub that is easily
-					accessible.
-					</p>
-				</div>
-				<div class="icons">
-					<a  href="https://github.com/sfuia/sfuia-website" target="_blank" ><img src="images/github.png" class="link"></a>
-					<a href="https://sfuia.com" target="_blank" ><img src="images/link.png" class="link"></a>
-				</div>
-				<div class="tools">
-					<span>Next.js</span>
-					<span>Bootstrap</span>
-					<span>SASS</span>
-					<span>Vercel</span>
-				</div>
-			</div>
-			<div class="card-wrapper">
-				<div class="image-content">
-					<span class="overlay"></span>
-					<div class="card-image">
-						<img src="images/myruns.png" class="img">
+
+				<div class="card-wrapper">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="card-image">
+							<img src="images/myruns.png" class="img">
+						</div>
+					</div>
+					<div class="card-content">
+						<a  href="https://github.com/calbertan/myruns" target="_blank" >
+							<h3 class="card-name">myRuns</h3>
+						</a>
+						<p class="card-text">myRuns is an android application
+						tracks your exercise and stores them in its history.
+						It is built using a MVVM model to seperate the database
+						from the viewmodel to increase modularity. It tracks
+						your location by using the GoogleMapsAPI and a tracking
+						service. It also features an activity recognition feature
+						that detects whether you are running, sitting or walking.
+						</p>
+					</div>
+					<div class="icons">
+						<a  href="https://github.com/calbertan/myruns" target="_blank" ><img src="images/github.png" class="link"></a>
+					</div>
+					<div class="tools">
+						<span>Kotlin</span>
+						<span>Android Studio</span>
 					</div>
 				</div>
-				<div class="card-content">
-					<a  href="https://github.com/calbertan/myruns" target="_blank" >
-						<h3 class="card-name">myRuns</h3>
-					</a>
-					<p class="card-text">myRuns is an android application
-					tracks your exercise and stores them in its history.
-					It is built using a MVVM model to seperate the database
-					from the viewmodel to increase modularity. It tracks
-					your location by using the GoogleMapsAPI and a tracking
-					service. It also features an activity recognition feature
-					that detects whether you are running, sitting or walking.
-					</p>
-				</div>
-				<div class="icons">
-					<a  href="https://github.com/calbertan/myruns" target="_blank" ><img src="images/github.png" class="link"></a>
-				</div>
-				<div class="tools">
-					<span>Kotlin</span>
-					<span>Android Studio</span>
-				</div>
-			</div>
-			<div class="card-wrapper">
-				<div class="image-content">
-					<span class="overlay"></span>
-					<div class="card-image">
-						<img src="images/cshell.png" class="img">
+
+				<div class="card-wrapper">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="card-image">
+							<img src="images/cshell.png" class="img">
+						</div>
+					</div>
+					<div class="card-content">
+						<a  href="https://github.com/calbertan/cshell" target="_blank" >
+							<h3 class="card-name">C-Shell</h3>
+						</a>
+						<p class="card-text">C-Shell is a command-line interprer 
+						that mimics a Linux/Unix command line made using C. 
+						This shell supports listing files and directories in 
+						the file system, history of executed commands, and 
+						environment variables. Upon calling an unsupported 
+						function, CShell will create a fork to a child process, 
+						where the command will be passed and executed by the 
+						normal Linux/Unix terminal. 
+						</p>
+					</div>
+					<div class="icons">
+						<a  href="https://github.com/calbertan/cshell" target="_blank" ><img src="images/github.png" class="link"></a>
+					</div>
+					<div class="tools">
+						<span>C</span>
+						<span>Linux</span>
 					</div>
 				</div>
-				<div class="card-content">
-					<a  href="https://github.com/calbertan/cshell" target="_blank" >
-						<h3 class="card-name">C-Shell</h3>
-					</a>
-					<p class="card-text">C-Shell is a command-line interprer 
-					that mimics a Linux/Unix command line made using C. 
-					This shell supports listing files and directories in 
-					the file system, history of executed commands, and 
-					environment variables. Upon calling an unsupported 
-					function, CShell will create a fork to a child process, 
-					where the command will be passed and executed by the 
-					normal Linux/Unix terminal. 
-					</p>
-				</div>
-				<div class="icons">
-					<a  href="https://github.com/calbertan/cshell" target="_blank" ><img src="images/github.png" class="link"></a>
-				</div>
-				<div class="tools">
-					<span>C</span>
-					<span>Linux</span>
-				</div>
-			</div>
-			<div class="card-wrapper">
-				<div class="image-content">
-					<span class="overlay"></span>
-					<div class="card-image">
-						<img src="images/weatherly.png" class="img">
+
+				<div class="card-wrapper">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="card-image">
+							<img src="images/weatherly.png" class="img">
+						</div>
+					</div>
+					<div class="card-content">
+						<a  target="_blank" >
+							<h3 class="card-name">Weatherly</h3>
+						</a>
+						<p class="card-text">Weatherly is a weather app
+						that was built by using the One Call API. We used 
+						a Prototyping model as the framework for the development process. It is equiped
+						with a CI/CD pipeline that ran unit/integrated tests
+						before deploying to Heroku. 
+						</p>
+					</div>
+					<div class="icons">
+						<a  href="https://github.com/ctan24/Group-4-Project" target="_blank" ><img src="images/github.png" class="link"></a>
+					</div>
+					<div class="tools">
+						<span>HTML</span>
+						<span>EJS</span>
+						<span>CI/CD</span>
+						<span>Heroku</span>
 					</div>
 				</div>
-				<div class="card-content">
-					<a  target="_blank" >
-						<h3 class="card-name">Weatherly</h3>
-					</a>
-					<p class="card-text">Weatherly is a weather app
-					that was built by using the One Call API. We used 
-					a Prototyping model as the framework for the development process. It is equiped
-					with a CI/CD pipeline that ran unit/integrated tests
-					before deploying to Heroku. 
-					</p>
-				</div>
-				<div class="icons">
-					<a  href="https://github.com/ctan24/Group-4-Project" target="_blank" ><img src="images/github.png" class="link"></a>
-				</div>
-				<div class="tools">
-					<span>HTML</span>
-					<span>EJS</span>
-					<span>CI/CD</span>
-					<span>Heroku</span>
-				</div>
-			</div>
-			<div class="card-wrapper">
-				<div class="image-content">
-					<span class="overlay"></span>
-					<div class="card-image">
-						<img src="images/grid.png" class="img">
+
+				<div class="card-wrapper">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="card-image">
+							<img src="images/grid.png" class="img">
+						</div>
+					</div>
+					<div class="card-content">
+						<a  target="_blank" >
+							<h3 class="card-name">Sudoku Solver</h3>
+						</a>
+						<p class="card-text">Sudoku solver is a C++ program that takes
+						in .txt files that contain information regarding an n-sized
+						sudoku grid and utilizes backtracking to outputs all possible 
+						solutions to the given grid input.
+						</p>
+					</div>
+					<div class="tools">
+						<span>C++</span>
 					</div>
 				</div>
-				<div class="card-content">
-					<a  target="_blank" >
-						<h3 class="card-name">Sudoku Solver</h3>
-					</a>
-					<p class="card-text">Sudoku solver is a C++ program that takes
-					in .txt files that contain information regarding an n-sized
-					sudoku grid and utilizes backtracking to outputs all possible 
-					solutions to the given grid input.
-					</p>
-				</div>
-				<div class="tools">
-					<span>C++</span>
-				</div>
-			</div>
-			<div class="card-wrapper">
-				<div class="image-content">
-					<span class="overlay"></span>
-					<div class="card-image">
+
+				<div class="card-wrapper">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="card-image">
+						</div>
+					</div>
+					<div class="card-content no-img">
+						<a  href="https://github.com/calbertan/calbertan.github.io" target="_blank" >
+							<h3 class="card-name">Portfolio</h3>
+						</a>
+						<p class="card-text">This website! It was made by only
+						using html, css and javascript. Despite having 
+						experience with frameworks like react and typescript,
+						I wanted to challenge myself to create a website 
+						by using basic html/css knowledge. This exercise
+						made me all the more aware of the cool tricks
+						you can accomplish with the basic tools. 
+						</p>
+					</div>
+					<div class="icons">
+						<a  href="https://github.com/calbertan/calbertan.github.io" target="_blank" ><img src="images/github.png" class="link"></a>
+					</div>
+					<div class="tools">
+						<span>HTML</span>
+						<span>CSS</span>
 					</div>
 				</div>
-				<div class="card-content no-img">
-					<a  href="https://github.com/calbertan/calbertan.github.io" target="_blank" >
-						<h3 class="card-name">Portfolio</h3>
-					</a>
-					<p class="card-text">This website! It was made by only
-					using html, css and javascript. Despite having 
-					experience with frameworks like react and typescript,
-					I wanted to challenge myself to create a website 
-					by using basic html/css knowledge. This exercise
-					made me all the more aware of the cool tricks
-					you can accomplish with the basic tools. 
-					</p>
-				</div>
-				<div class="icons">
-					<a  href="https://github.com/calbertan/calbertan.github.io" target="_blank" ><img src="images/github.png" class="link"></a>
-				</div>
-				<div class="tools">
-					<span>HTML</span>
-					<span>CSS</span>
-				</div>
+				
 			</div>
-		</div>
-		<button class="nxt-btn"><img src="images/next.png" alt=""></button>
+			<button class="nxt-btn"><img src="images/next.png" alt=""></button>
 		</div>
 	</section>
 </div>
