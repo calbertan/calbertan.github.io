@@ -15,7 +15,7 @@ slideContainer.forEach((item, i) => {
       nxtBtn.disabled = false;
       preBtn.disabled = false;
       btnDisabled = false;
-    }, 400)
+    }, 500)
   }
 
   nxtBtn[i].addEventListener('click', () => {
