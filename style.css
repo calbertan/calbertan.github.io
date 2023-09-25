@@ -405,6 +405,7 @@ h3:hover{
   section{
     max-width: 420px;
     margin: auto;
+    margin-top: 2rem;
   }
 
   .introduction{
@@ -439,6 +440,10 @@ h3:hover{
     font-size: medium;
   }
 
+  .empty-bar, .progress-bar{
+    margin-bottom: 0rem;
+  }
+
   .card-wrapper{
     width: 400px;
     display: flex;
@@ -452,6 +457,10 @@ h3:hover{
 
   .card-content{
     max-width: 250px;
+  }
+
+  .card-text{
+    font-size: medium;
   }
 
   a > img{
