@@ -434,7 +434,10 @@ h3:hover{
     position: relative;
     bottom: 1.25rem;
   }
-  
+
+  .job-title, .date{
+    font-size: medium;
+  }
 
   .card-wrapper{
     width: 400px;
